@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/image"
+        android:padding="10dp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_launcher"/>
+    <TextView
+        android:id="@+id/title"
+        android:text="Title"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_toEndOf="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/content"
+        android:text="This is the content of the item"
+        android:textSize="20sp"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@+id/image"
+        android:layout_below="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
